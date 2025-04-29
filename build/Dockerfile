@@ -21,4 +21,4 @@ RUN mkdir -p modules \
 
 COPY wifiQR.png modules/MMM-ImagesPhotos/uploads
 
-ENTRYPOINT ["dos2unix", "./entrypoint.sh", "&&", "./entrypoint.sh", "npm", "run", "server"]
+ENTRYPOINT ["./entrypoint.sh", "npm", "run", "server"]
